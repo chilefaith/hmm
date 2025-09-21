@@ -1,0 +1,273 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    
+    
+        background: #e3f2fd;  /* soft blue */
+        color: #222;
+      
+      }
+    
+  
+  
+  /* Links */
+  a {
+    color: #0077cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: #005fa3;
+  }
+  
+  /* Header */
+  header {
+    background: #1e1e2f;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  }
+  
+  header h1 {
+    font-size: 1.6rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 2px;
+  }
+  
+  header nav ul li a:hover {
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+  }
+  
+  /* Section Defaults */
+  section {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 2rem;
+  }
+  
+  /* Section Backgrounds */
+  #about {
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  }
+  
+  #projects {
+    background: #f3f7fb;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  }
+  
+  #resume {
+    background: linear-gradient(135deg, #eef5ff, #dbe8f8);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  }
+  
+  #contact {
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  }
+  
+  /* About Section */
+  #about {
+    text-align: center;
+  }
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #0077cc;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  /* Projects */
+  .project {
+    background: white;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  }
+  
+  .project img {
+    width: 50%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Resume */
+  .resume-link {
+    display: inline-block;
+    background: #0077cc;
+    color: white;
+    padding: 0.9rem 1.5rem;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  .resume-link:hover {
+    background: #005fa3;
+    transform: scale(1.05);
+  }
+  
+  /* Contact Section */
+  .contact-info {
+    text-align: center;
+    margin-bottom: 4rem 2rem;
+  }
+  .contact-info p {
+    margin: 0.5rem 0;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+    max-width: 500px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  .contact-form button {
+    background: #0077cc;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .contact-form button:hover {
+    background: #005fa3;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #1e1e2f;
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+  /* Dark Mode Toggle Button */
+#darkModeToggle {
+    background: #ffcc00;
+    color: #222;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  #darkModeToggle:hover {
+    background: #e6b800;
+  }
+  /* 🌙 Dark Mode Styles */
+body.dark-mode {
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    color: #eaeaea;
+  }
+  
+  body.dark-mode header {
+    background: #000;
+  }
+  
+  body.dark-mode header nav ul li a {
+    color: #eaeaea;
+  }
+  
+  body.dark-mode section {
+    background: #2a2a2a;
+    color: #eaeaea;
+    box-shadow: none;
+  }
+  
+  body.dark-mode .project {
+    background: #333;
+    color: #eaeaea;
+  }
+  
+  body.dark-mode .resume-link,
+  body.dark-mode .contact-form button {
+    background: #ffcc00;
+    color: #222;
+  }
+  
+  body.dark-mode footer {
+    background: #000;
+    color: #eaeaea;
+  }
+  /* Contact Section */
+#contact {
+    text-align: center;   /* make everything centered */
+    padding: 4rem 2rem;
+  }
+  
+  #contact h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+  
+  .contact-info p {
+    margin: 0.5rem 0;
+  }
+  
+  /* Keep the form centered but inputs aligned properly */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+    max-width: 500px;
+    text-align: left; /* only inputs align left */
+  }

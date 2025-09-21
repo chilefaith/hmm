@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chile Faith Ozichi| Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Chile Faith Ozichi</h1>
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="darkModeToggle">🌙 Dark Mode</button>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+        <img src="screenshot.jpg" alt="Screenshot of Project Title">
+
+
+        
+      <h3>Project Title</h3>
+      <p>Short description of the project and what problem it solves.</p>
+      <p><strong>Tech Used:</strong> Python, Html, Css,Java</p>
+      <a href="https://chilefaith.github.io/chile/" target="_blank">GitHub</a> |
+      
+    </div>
+  
+    
+
+  <footer>
+    <p>© 2025 Chile Faith Ozichi</p>
+  </footer>
+  <script>
+    const toggleBtn = document.getElementById("darkModeToggle");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      toggleBtn.textContent = 
+        document.body.classList.contains("dark-mode") ? "☀ Light Mode" : "🌙 Dark Mode";
+    });
+  </script>
+</body>
+</html>
